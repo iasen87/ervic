@@ -14,3 +14,7 @@
 $app->get('/', function () use ($app) {
     return $app->version();
 });
+
+$app->get('/fb/webhook', function () {
+    return (new \App\Http\Controllers\WebHookController())->welcome();
+});
