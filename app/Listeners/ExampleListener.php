@@ -26,7 +26,8 @@ class ExampleListener
      */
     public function handle(ExampleEvent $event)
     {
-        echo 'here';
+
+        var_dump("Consuming event#");
         var_dump($event);
     }
 }
